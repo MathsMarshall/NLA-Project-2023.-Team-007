@@ -12,7 +12,7 @@ Input: $A \in \mathbb{R}^{m \times n}$
 
 Output: $V,\ R \in \mathbb{R}^{m \times n}, \ S \in \mathbb{R}^{n \times n}$ representing the QR factor of $A$.
 
-Algorithm 2:  Block Cholesky-LU-based QR factorization of $$A = (A^{T}_{□},A^{T}_{r})^T$$ with orthogonal factor in the form $Q = I − VSVT$
+Algorithm 2:  Block Cholesky-LU-based QR factorization of $A = (A^{T}_{□},A^{T}_{r})^T$ with orthogonal factor in the form $Q = I − VSVT$
 
 Input: $A \in \mathbb{R}^{m \times n}$
 

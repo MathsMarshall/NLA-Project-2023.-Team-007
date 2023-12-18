@@ -21,8 +21,11 @@ def block_cholesky_lu_qr_factorization(A : np.array) -> tuple :
     
     A_square_minus_R = A_square - R_square  # Compute A□ - R□
     P, L, U = lu(A_square_minus_R)  # LU factors of A□ - R□
+    
+    
     # This matrix has to have a the permutation matrix as I
-
+    if abs(np.trace(P) - A_square_minus_R.shape[0]) > 1e-6:
+        raise Exception("The Permutationa Matrix is not Identity! This wont work correctly.")
     
 
     R_inverse = np.linalg.inv(R_square)

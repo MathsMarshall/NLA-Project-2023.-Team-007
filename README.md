@@ -7,11 +7,15 @@ In the paper, it is acknowledged that block algorithms are generally faster than
 We consider $m \geq n$ always.
 
 Algorithm 1: Recursive Householder-based QR factorization of $A \in \mathbb{R}^{m \times n}$ with orthogonal factor in the form $Q = I - VSV^T$.
+
 Input: $A \in \mathbb{R}^{m \times n}$
+
 Output: $V,\ R \in \mathbb{R}^{m \times n}, \ S \in \mathbb{R}^{n \times n}$ representing the QR factor of $A$.
 
-Algorithm 2:  Block Cholesky-LU-based QR factorization of $A = (A^{T}_{□},A^{T}_{r})^T$ with orthogonal factor in the form $Q = I − VSVT$
+Algorithm 2:  Block Cholesky-LU-based QR factorization of $$A = (A^{T}_{□},A^{T}_{r})^T$$ with orthogonal factor in the form $Q = I − VSVT$
+
 Input: $A \in \mathbb{R}^{m \times n}$
+
 Output: $V,\ R \in \mathbb{R}^{m \times n}, \ S, \ R_{□} \in \mathbb{R}^{n \times n}$ representing the QR factor of $A$.
 The block form can be infered from the equation below,
 

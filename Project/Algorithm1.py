@@ -39,6 +39,9 @@ def recursive_qr_factorization(A : np.array ) -> tuple:
     For proper usage, the matrix A MUST be full rank and tall rectangular. 
     '''
     m, n = A.shape
+    if(n >= m):
+        raise Exception("The matrix MUST be rectangular")
+    
     if n == 1:
         return householder_reflection(A)
     else:

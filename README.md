@@ -27,3 +27,11 @@ The task is to show that overall, algorithm 3 is faster than algorithm 1, and mo
 In each function we implemented, we have included a documentation for the user to know what type of matrices each function accepts as an input. We have also enabled the functions to give error where necessary as a guide to the user to edit the function inputs.
 
 For the numerical analysis, we do both a stability check and speed check. For the speed test, we compare algortihm 3 to algorithm 1 and for the stability test we compare algorithm 3 to algorithm 2. For speed test we use the time module in Python, and for the stability test, we generate a random matrix with a given condition number, and we do relative loss of orthogonality check, as defined in the paper, but we use spectral norm, whereas Frobenius norm was used in the paper.
+
+
+
+Team Memeber Contribution
+Holdings Ogon -  Implemented algoriuthm 1 and helped with writing the condtion_number function
+Joshua Udobang -  Did the plot graphing and observed the emprical results
+Nwachukwu Mmesomachi - Implemented Algorithm 3 and verified the mathematical correctness. Wrote the README file
+Okechukwu Okeke - Implemented algorithm 2 and modularised the code

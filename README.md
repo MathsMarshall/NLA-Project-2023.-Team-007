@@ -31,7 +31,12 @@ For the numerical analysis, we do both a stability check and speed check. For th
 
 
 Team Memeber Contribution
+
 Holdings Ogon -  Implemented algoriuthm 1 and helped with writing the condtion_number function
+
 Joshua Udobang -  Did the plot graphing and observed the emprical results
+
 Nwachukwu Mmesomachi - Implemented Algorithm 3 and verified the mathematical correctness. Wrote the README file
+
 Okechukwu Okeke - Implemented algorithm 2 and modularised the code
+

@@ -19,7 +19,7 @@ Input: $A \in \mathbb{R}^{m \times n}$
 Output: $V,\ R \in \mathbb{R}^{m \times n}, \ S, \ R_{□} \in \mathbb{R}^{n \times n}$ representing the QR factor of $A$.
 The block form can be infered from the equation below,
 
-$$\begin{pmatrix}A_{□}\\A_r\end{pmatrix}=A=QR=\begin{bmatrix}Y&Z\end{bmatrix}\begin{bmatrix}R_{□}\\0\end{bmatrix\\$$
+$$\begin{pmatrix}A_{□} \\ A_r \end{pmatrix}=A=QR=\begin{pmatrix}Y&Z\end{pmatrix}\begin{pmatrix}R_{□}\\ 0 \end{pmatrix}$$
 
 Algorithm 3: It uses a user defined parameter $k$ to decide when to shift from algorithm 1, which involves equal splits of columns, to jump to the block method of algorithm 2.
 

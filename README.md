@@ -30,7 +30,7 @@ For the numerical analysis, we do both a stability check and speed check. For th
 
 
 
-Team Memeber Contribution
+##Team Memeber Contribution
 
 Holdings Ogon -  Implemented algoriuthm 1 and helped with writing the condtion_number function
 
@@ -41,7 +41,7 @@ Nwachukwu Mmesomachi - Implemented Algorithm 3 and verified the mathematical cor
 Okechukwu Okeke - Implemented algorithm 2 and modularised the code
 
 
-References
+##References
 
 Le Borne S. A block Cholesky-LU-based QR factorization for rectangular matrices. Numer Linear Algebra Appl. 2023;30(5):e2497
 

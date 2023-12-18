@@ -30,7 +30,7 @@ For the numerical analysis, we do both a stability check and speed check. For th
 
 
 
-## Team Memeber Contribution
+## Team Members Contribution
 
 Holdings Ogon -  Implemented algoriuthm 1 and helped with writing the condtion_number function
 

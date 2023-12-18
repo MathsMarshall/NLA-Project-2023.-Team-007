@@ -40,3 +40,22 @@ Nwachukwu Mmesomachi - Implemented Algorithm 3 and verified the mathematical cor
 
 Okechukwu Okeke - Implemented algorithm 2 and modularised the code
 
+
+References
+
+Le Borne S. A block Cholesky-LU-based QR factorization for rectangular matrices. Numer Linear Algebra Appl. 2023;30(5):e2497
+
+Barlow J. Block modified Gram-Schmidt algorithms and their analysis. SIAM J Matrix Anal Appl. 2019;40:1257–90. 
+
+Carson E, Lund K, Rozloznik M, Thomas S. Block Gram-Schmidt algorithms and their stability properties. Linear Algebra Appl. 2022;638:150–95. 
+
+Terao T, Ozaki K, Ogita T. LU-Cholesky QR algorithms for thin QR decomposition. Parallel Comput. 2020;92:102571. https://doi.org/10. 1016/j.parco.2019.102571 4. 
+
+Golub G, Van Loan C. Matrix computations. 3rd. ed. London: John Hopkins; 1996. 5.
+
+Kressner D, Susnjara A. Fast QR decomposition of HODLR matrices, 2018. https://arxiv.org/abs/1809.10585 6. 
+ 
+Le Borne S. Block computation and representation of a sparse nullspace basis of a rectangular matrix. Linear Algebra Appl. 2008;428:2455–67
+![image](https://github.com/MathsMarshall/NLA-Project-2023.-Team-007/assets/54585664/e4e7952a-3346-4b22-9070-0f125a375c3f)
+
+

@@ -4,6 +4,8 @@ from Algorithm2 import block_cholesky_lu_qr_factorization
 import numpy as np
 def recursive_qr_combined(A,k : int):
     '''
+    Recusrive breaks down the matrix A until the number of columns in the block is less than k.
+    Then it performs the block cholesky on that unit 
     
     '''
     #Add docstring
@@ -15,12 +17,8 @@ def recursive_qr_combined(A,k : int):
         A1 = A[:, :mid]
         A2 = A[:, mid:]
 
-        
-        
-
-        #print(A2.shape,"emek")
         Y1,T1,R1 = recursive_qr_combined(A1.copy(),k)
-        #print("\n\n\n", Y1.shape,T1.shape,R1.shape ,"\n\n\n")
+ 
         Y1T1Y1_T = Y1@T1@Y1.T
         
         Q1 = np.eye(Y1T1Y1_T.shape[0]) -  Y1T1Y1_T
@@ -34,10 +32,7 @@ def recursive_qr_combined(A,k : int):
         
         
         Y2 = np.block([[np.zeros((m - Y2_hat.shape[0],Y2_hat.shape[1] ))], [Y2_hat]])
-        #print(T1.shape,Y1.T.shape,Y2.shape,T2.shape)
-
         T3 = -T1@(Y1.T@Y2)@T2
-        #print("     ", R1.shape,A2[:mid].shape)
         
         Y = np.block([[Y1,Y2]])
         

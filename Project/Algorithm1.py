@@ -13,7 +13,6 @@ def householder_reflection(A : np.array) ->tuple:
         
         u = vec - new
         
-        
         #return
         u = u/np.linalg.norm(u)*np.sqrt(2)
         v = u/u[0]
@@ -33,9 +32,7 @@ def recursive_qr_factorization(A : np.array ) -> tuple:
     Recursive computes the QR decomposition of A using HouseHolder transformations
     The recursion goes down to one column then uses the helper function above to find the required
     matrix to make all but one component zero. It then builds it up form there using the mathematical approach
-    of QR
-
-
+    of QR.
     For proper usage, the matrix A MUST be full rank and tall rectangular. 
     '''
     m, n = A.shape
@@ -51,8 +48,6 @@ def recursive_qr_factorization(A : np.array ) -> tuple:
 
         
         
-
-
         Y1,T1,R1 = recursive_qr_factorization(A1.copy())
         Y1T1Y1_T = Y1@T1@Y1.T
         

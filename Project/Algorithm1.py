@@ -1,11 +1,10 @@
 import numpy as np
-def householder_reflection(A):
+def householder_reflection(A : np.array) ->tuple:
     
     vec = np.squeeze(A)
     norm = np.linalg.norm(vec)
 
-    #print(norm)
-    #v_norm = np.linalg.norm(v)
+    
     if norm == 0:
         return np.eye(len(v)), v
     else:
@@ -29,8 +28,16 @@ def householder_reflection(A):
         return v,s,np.array([[norm]])
             
 
-def recursive_qr_factorization(A):
-    #Add docstring
+def recursive_qr_factorization(A : np.array ) -> tuple:
+    '''
+    Recursive computes the QR decomposition of A using HouseHolder transformations
+    The recursion goes down to one column then uses the helper function above to find the required
+    matrix to make all but one component zero. It then builds it up form there using the mathematical approach
+    of QR
+
+
+    For proper usage, the matrix A MUST be full rank and tall rectangular. 
+    '''
     m, n = A.shape
     if n == 1:
         return householder_reflection(A)
@@ -42,9 +49,8 @@ def recursive_qr_factorization(A):
         
         
 
-        #print(A2.shape,"emek")
+
         Y1,T1,R1 = recursive_qr_factorization(A1.copy())
-        #print("\n\n\n", Y1.shape,T1.shape,R1.shape ,"\n\n\n")
         Y1T1Y1_T = Y1@T1@Y1.T
         
         Q1 = np.eye(Y1T1Y1_T.shape[0]) -  Y1T1Y1_T
@@ -58,10 +64,10 @@ def recursive_qr_factorization(A):
         
         
         Y2 = np.block([[np.zeros((m - Y2_hat.shape[0],Y2_hat.shape[1] ))], [Y2_hat]])
-        #print(T1.shape,Y1.T.shape,Y2.shape,T2.shape)
+
 
         T3 = -T1@(Y1.T@Y2)@T2
-        #print("     ", R1.shape,A2[:mid].shape)
+
         
         Y = np.block([[Y1,Y2]])
         

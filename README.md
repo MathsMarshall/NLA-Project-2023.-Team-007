@@ -14,7 +14,7 @@ Output: $V,\ R \in \mathbb{R}^{m \times n}, \ S \in \mathbb{R}^{n \times n}$ rep
 
 Algorithm 2:  Block Cholesky-LU-based QR factorization of $A$ with orthogonal factor in the form $Q = I − VSV^T$ (Please refer to the Jupyter notebook file for formulas as the LaTeX was not working well here)
 
-Input: $A \in \mathbb{R}^{m \times n}$
+Input: $A \in \mathbb{R}^{m \times n}$ (It must also permit LU factorisation without permutation).
 
 Output: $V,\ R \in \mathbb{R}^{m \times n}, \ S, \ R_{□} \in \mathbb{R}^{n \times n}$ representing the QR factor of $A$.
 

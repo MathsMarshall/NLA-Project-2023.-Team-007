@@ -1,7 +1,7 @@
 # NLA-Project-2023: Team-007
 This was a project of some skoltech students, where the task was the implementation of a Block like Cholesky Matrix Factorization: https://doi.org/10.1002/nla.2497
 
-In the paper, it is acknowledged that block algorithms are generally faster than other algorithms, and householder transformations are more stable. So the author proposes a method that tries to take advantage of the best of both worlds. In this repository, we implement from the ground up (using only basic Numpy functions and matplotlib), the algorithms in the paper, specifically: algorithm 1, algorithm 2, and algorithm 3. Algorithm 3 is the grand result of the paper, for "tall skinny matrices."
+In the paper, it is acknowledged that block algorithms are generally faster than other algorithms, and householder transformations are more stable. So the author proposes a method that tries to take advantage of the best of both worlds. In this repository, we implement from the ground up (using only basic Numpy functions, cholesky, lu functions in scipy.linalg, and matplotlib), the algorithms in the paper, specifically: algorithm 1, algorithm 2, and algorithm 3. Algorithm 3 is the grand result of the paper, for "tall skinny matrices."
 
 ## The Problem
 We consider $m \geq n$ always.
